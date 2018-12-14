@@ -9,14 +9,36 @@
     <title>Productivity Calculator</title>
 </head>
 <body>
-    <div class="container">
-        <input id="inputArea" type="text" placeholder="Enter Time"></input>
-        <button type="button" id="inputButton">Add More</button>
-        <p id="test"></p>
+    <div id="mainContent">
+        <section>
+            <h2>Strategic Management</h2>
+            <p>If you have many small units of time, simply enter them one at a time.</p>
+            <input class="strategicInput" type="text" placeholder="Enter Time" value=""></input>
+            <button type="button" id="strategic">Add to List</button>
+                <ul id="strategicUl" style="list-style-type:none"></ul>
+        </section> 
+        <section>
+            <h2>Team Management</h2>
+            <input class="teamInput" type="text" placeholder="Enter Time" value=""></input>
+            <button type="button" id="team">Add to List</button>
+                <ul id="teamUl" style="list-style-type:none"></ul>
+        </section>
+        <section>
+            <h2>Meetings</h2>
+            <input class="meetingsInput" type="text" placeholder="Enter Time" value=""></input>
+            <button type="button" id="meetings">Add to List</button>
+                <ul id="meetingsUl" style="list-style-type:none"></ul>
+        </section>
     </div>
+
+
+
+
+
+
+
 
 <script src="js/script.js"></script>    
 </body>
 </html>
 
-<!--const newInput = "<input type="text" placeholder="Enter Time"></input>";-->
