@@ -4,7 +4,7 @@ function addItemButton1() {
     let li = document.createElement('li');
     let input = document.querySelector('.strategicInput');
     let ul = document.getElementById('strategicUl');
-    li.textContent = input.value;
+    li.textContent = parseFloat(input.value);
     ul.appendChild(li);
     input.value = '';
 }
@@ -13,7 +13,7 @@ function addItemButton2() {
     let li = document.createElement('li');
     let input = document.querySelector('.teamInput');
     let ul = document.getElementById('teamUl');
-    li.textContent = input.value;
+    li.textContent = parseFloat(input.value);
     ul.appendChild(li);
     input.value = '';
 }
@@ -22,7 +22,7 @@ function addItemButton3() {
     let li = document.createElement('li');
     let input = document.querySelector('.leaderMeetingsInput');
     let ul = document.getElementById('leaderMeetingsUl');
-    li.textContent = input.value;
+    li.textContent = parseFloat(input.value);
     ul.appendChild(li);
     input.value = '';
 }
@@ -31,7 +31,7 @@ function addItemButton4() {
     let li = document.createElement('li');
     let input = document.querySelector('.staffMeetingsInput');
     let ul = document.getElementById('staffMeetingsUl');
-    li.textContent = input.value;
+    li.textContent = parseFloat(input.value);
     ul.appendChild(li);
     input.value = '';
 }
@@ -40,7 +40,7 @@ function addItemButton5() {
     let li = document.createElement('li');
     let input = document.querySelector('.tasksInput');
     let ul = document.getElementById('tasksUl');
-    li.textContent = input.value;
+    li.textContent = parseFloat(input.value);
     ul.appendChild(li);
     input.value = '';
 }
@@ -49,7 +49,7 @@ function addItemButton6() {
     let li = document.createElement('li');
     let input = document.querySelector('.vacationInput');
     let ul = document.getElementById('vacationUl');
-    li.textContent = input.value;
+    li.textContent = parseFloat(input.value);
     ul.appendChild(li);
     input.value = '';
 }
@@ -58,7 +58,7 @@ function addItemButton7() {
     let li = document.createElement('li');
     let input = document.querySelector('.sickLeaveInput');
     let ul = document.getElementById('sickLeaveUl');
-    li.textContent = input.value;
+    li.textContent = parseFloat(input.value);
     ul.appendChild(li);
     input.value = '';
 }
