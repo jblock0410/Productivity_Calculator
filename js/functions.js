@@ -5,8 +5,12 @@ function addItemButton1() {
     let input = document.querySelector('.strategicInput');
     let ul = document.getElementById('strategicUl');
     li.textContent = parseFloat(input.value);
-    ul.appendChild(li);
-    input.value = '';
+    if (isNaN(parseFloat(input.value)) == true) {
+        input.value = '';
+    } else {   
+        ul.appendChild(li);
+        input.value = '';
+    }
 }
 
 function addItemButton2() {
@@ -14,8 +18,12 @@ function addItemButton2() {
     let input = document.querySelector('.teamInput');
     let ul = document.getElementById('teamUl');
     li.textContent = parseFloat(input.value);
-    ul.appendChild(li);
-    input.value = '';
+    if (isNaN(parseFloat(input.value)) == true) {
+        input.value = '';
+    } else {   
+        ul.appendChild(li);
+        input.value = '';
+    }
 }
 
 function addItemButton3() {
@@ -23,8 +31,12 @@ function addItemButton3() {
     let input = document.querySelector('.leaderMeetingsInput');
     let ul = document.getElementById('leaderMeetingsUl');
     li.textContent = parseFloat(input.value);
-    ul.appendChild(li);
-    input.value = '';
+    if (isNaN(parseFloat(input.value)) == true) {
+        input.value = '';
+    } else {   
+        ul.appendChild(li);
+        input.value = '';
+    }
 }
 
 function addItemButton4() {
@@ -32,8 +44,12 @@ function addItemButton4() {
     let input = document.querySelector('.staffMeetingsInput');
     let ul = document.getElementById('staffMeetingsUl');
     li.textContent = parseFloat(input.value);
-    ul.appendChild(li);
-    input.value = '';
+    if (isNaN(parseFloat(input.value)) == true) {
+        input.value = '';
+    } else {   
+        ul.appendChild(li);
+        input.value = '';
+    }
 }
 
 function addItemButton5() {
@@ -41,8 +57,12 @@ function addItemButton5() {
     let input = document.querySelector('.tasksInput');
     let ul = document.getElementById('tasksUl');
     li.textContent = parseFloat(input.value);
-    ul.appendChild(li);
-    input.value = '';
+    if (isNaN(parseFloat(input.value)) == true) {
+        input.value = '';
+    } else {   
+        ul.appendChild(li);
+        input.value = '';
+    }
 }
 
 function addItemButton6() {
@@ -50,8 +70,12 @@ function addItemButton6() {
     let input = document.querySelector('.vacationInput');
     let ul = document.getElementById('vacationUl');
     li.textContent = parseFloat(input.value);
-    ul.appendChild(li);
-    input.value = '';
+    if (isNaN(parseFloat(input.value)) == true) {
+        input.value = '';
+    } else {   
+        ul.appendChild(li);
+        input.value = '';
+    }
 }
 
 function addItemButton7() {
@@ -59,8 +83,12 @@ function addItemButton7() {
     let input = document.querySelector('.sickLeaveInput');
     let ul = document.getElementById('sickLeaveUl');
     li.textContent = parseFloat(input.value);
-    ul.appendChild(li);
-    input.value = '';
+    if (isNaN(parseFloat(input.value)) == true) {
+        input.value = '';
+    } else {   
+        ul.appendChild(li);
+        input.value = '';
+    }
 }
 
 function addItemButton (button) {
