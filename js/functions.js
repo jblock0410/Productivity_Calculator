@@ -2,6 +2,7 @@ const ul = document.querySelector('ul');
 
 function addItemButton1() {
     let li = document.createElement('li');
+    li.setAttribute('class', 'timeEntry' );
     let input = document.querySelector('.strategicInput');
     let ul = document.getElementById('strategicUl');
     li.textContent = parseFloat(input.value);
@@ -11,6 +12,8 @@ function addItemButton1() {
         ul.appendChild(li);
         input.value = '';
     }
+    let section = document.getElementsByTagName('section');
+    section.appendChild(p);
 }
 
 function addItemButton2() {
@@ -124,5 +127,6 @@ const buttons = document.getElementsByTagName('button');
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].onclick = function() {
         addItemButton(this);
+        sumTotalButton(this);
     }
 }
