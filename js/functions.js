@@ -1,49 +1,10 @@
 
-/*
-function addItemButton1() {
-    let li = document.createElement('li');
-    li.setAttribute('class', 'timeEntry' );
-    let input = document.querySelector('strategicInput');
-    let ul = document.getElementById('strategicUl');
-    li.textContent = parseFloat(input.value);
-    if (isNaN(parseFloat(input.value)) == true) {
-        input.value = '';
-    } else {   
-        ul.appendChild(li);
-        input.value = '';
-        strategicInput = input.value;
-        strategicArray.push(strategicInput);
-    }
-    let p = document.createElement('p');
-    let section = document.getElementById('strategicSection');
-}
-*/
-
-/*
-function addItemButton1() {
-    let li = document.createElement('li');
-    let input = document.querySelector('.strategicInput');
-    let ul = document.getElementById('strategicUl');
-    let strategicArray = [];
-    li.textContent = parseFloat(input.value);
-    if (isNaN(parseFloat(input.value)) == true) {
-        input.value = '';
-    } else {   
-        ul.appendChild(li);
-        input.value = '';
-        strategicArray.push(input.value);
-    }
-}
-*/
-
-
-var input = document.querySelector('.strategicInput');
 var strategicArray = [];
 
-function addItemButton1() {
+function addItemButton1() { 
     let li = document.createElement('li');
     let ul = document.getElementById('strategicUl');
-    input = document.querySelector('.strategicInput');
+    let input = document.querySelector('.strategicInput');
     li.textContent = parseFloat(input.value);
     if (isNaN(parseFloat(input.value)) == true) { 
         input.value = '';
@@ -54,19 +15,9 @@ function addItemButton1() {
 }
 function addToArray1() {
     let li = document.getElementById('strategicUl').textContent;
-    strategicArray.push(li);
+    strategicArray.push(parseFloat(li));
     return strategicArray;
 }
-
-
-       /* for (let i = 0; i < ul.length; i++) {
-            strategicArray.push(input[i].value); 
-        }
-    }
-}*/
-
-
-
 
 
 function addItemButton2() {
