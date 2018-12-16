@@ -43,7 +43,7 @@ function addTotalTime (button) {
     }
 }
 */
-
+/*
 function sumTotal() {
     let p = document.createElement('p');
     let section = document.getElementsByTagName('section');
@@ -51,7 +51,14 @@ function sumTotal() {
     sum.push(input.value);
     p = sum.reduce(input.value);
 }
+*/
 
+
+
+
+
+
+/*
 function sumTotalButton (button) {
     let buttonId = button.id;
     switch (buttonId) {
@@ -60,3 +67,4 @@ function sumTotalButton (button) {
         break;
     }
 }
+*/

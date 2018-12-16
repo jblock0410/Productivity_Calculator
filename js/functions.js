@@ -1,9 +1,9 @@
-const ul = document.querySelector('ul');
 
+/*
 function addItemButton1() {
     let li = document.createElement('li');
     li.setAttribute('class', 'timeEntry' );
-    let input = document.querySelector('.strategicInput');
+    let input = document.querySelector('strategicInput');
     let ul = document.getElementById('strategicUl');
     li.textContent = parseFloat(input.value);
     if (isNaN(parseFloat(input.value)) == true) {
@@ -11,10 +11,63 @@ function addItemButton1() {
     } else {   
         ul.appendChild(li);
         input.value = '';
+        strategicInput = input.value;
+        strategicArray.push(strategicInput);
     }
-    let section = document.getElementsByTagName('section');
-    section.appendChild(p);
+    let p = document.createElement('p');
+    let section = document.getElementById('strategicSection');
 }
+*/
+
+/*
+function addItemButton1() {
+    let li = document.createElement('li');
+    let input = document.querySelector('.strategicInput');
+    let ul = document.getElementById('strategicUl');
+    let strategicArray = [];
+    li.textContent = parseFloat(input.value);
+    if (isNaN(parseFloat(input.value)) == true) {
+        input.value = '';
+    } else {   
+        ul.appendChild(li);
+        input.value = '';
+        strategicArray.push(input.value);
+    }
+}
+*/
+
+
+var input = document.querySelector('.strategicInput');
+var strategicArray = [];
+
+function addItemButton1() {
+    let li = document.createElement('li');
+    let ul = document.getElementById('strategicUl');
+    input = document.querySelector('.strategicInput');
+    li.textContent = parseFloat(input.value);
+    if (isNaN(parseFloat(input.value)) == true) { 
+        input.value = '';
+    } else {
+        ul.appendChild(li);
+        input.value = ''; 
+    }
+}
+function addToArray1() {
+    let li = document.getElementById('strategicUl').textContent;
+    strategicArray.push(li);
+    return strategicArray;
+}
+
+
+       /* for (let i = 0; i < ul.length; i++) {
+            strategicArray.push(input[i].value); 
+        }
+    }
+}*/
+
+
+
+
 
 function addItemButton2() {
     let li = document.createElement('li');
@@ -123,10 +176,40 @@ function addItemButton (button) {
     }
 }
 
+function addToArray (button) {
+    let buttonId = button.id;
+    switch (buttonId) {
+        case 'strategic': 
+            addToArray1(buttonId);
+            break;
+        default:
+            return false;
+    }
+}
+
 const buttons = document.getElementsByTagName('button');
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].onclick = function() {
         addItemButton(this);
-        sumTotalButton(this);
+        addToArray(this);
     }
 }
+/*
+function submitButton (button) {
+    let buttonId = button.id;
+    switch (buttonId) {
+        case 'strategicSubmit': 
+            submitButton1(buttonId);
+            break;
+        default:
+            return false;
+    }
+}
+
+const submitButtons = document.getElementById('strategicSubmit');
+for (let i = 0; i < submitButtons.length; i++) {
+    submitButtons[i].onclick = function() {
+        submitButton(this);
+    }
+}
+*/
