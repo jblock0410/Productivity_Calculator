@@ -8,17 +8,21 @@ function addItemButton1() {
     li.textContent = parseFloat(input.value);
     if (isNaN(parseFloat(input.value)) == true) { 
         input.value = '';
-    } else {
+    } else { 
         ul.appendChild(li);
         input.value = ''; 
     }
 }
 function addToArray1() {
-    let li = document.getElementById('strategicUl').textContent;
-    strategicArray.push(parseFloat(li));
-    return strategicArray;
-}
+    let ul = document.getElementById('strategicUl');
+    let li = ul.children;
+    for (let i = 0; i < li.length; i++) {
+        strategicArray.push(parseFloat((li)[i].textContent));
+        //strategicArray.push(parseFloat[i]);
+        //return strategicArray;
+    }
 
+}
 
 function addItemButton2() {
     let li = document.createElement('li');

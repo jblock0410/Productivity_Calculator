@@ -20,8 +20,6 @@ function addTotalTime (button) {
 }
 */
 
-const section = document.querySelectorAll('submit');
-
 /*
 function addTotalTime1() {
     let p = document.createElement('p');
