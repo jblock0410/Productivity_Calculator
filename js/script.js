@@ -6,6 +6,7 @@
     const section = document.getElementsByTagName('section');
     const h2 = document.getElementsByTagName('h2');
     const input = document.getElementsByTagName('input');
+    const button = document.getElementsByClassName('addItem');
 
 
 
@@ -36,6 +37,7 @@
         sectionList.push(sectionDiv);
     }
 
+
 // Function to assign the 'textContent' of each '.addItem button'     
     function addItemButtonText() {
         for (let i = 0; i < sectionList.length; i++) {
@@ -43,6 +45,8 @@
             }
         }
     addItemButtonText();
+
+
 
 // Function to assign the 'textContent' of each '.compute button'
     function computeButtonText() {
@@ -70,7 +74,7 @@ inputAttributes();
 
 
 
-// Function to assign 'id' to each 'sectionDiv' element    
+// Function to assign 'id' to each 'sectionDiv' element (used with SWITCH)   
     function addSectionDivId(idInput, index) { 
         for (let i = 0; i < sectionList.length; i++) {
             i = parseInt(index);
@@ -78,7 +82,8 @@ inputAttributes();
             return idInput;
         }
     }
-// Function to assign the 'textContent' of each 'h3' element
+
+// Function to assign the 'textContent' of each 'h3' element (used with SWITCH)
     function addH3Input(h2Input, index) {
         for (let i = 0; i < sectionList.length; i++) {
             i = parseInt(index);
@@ -94,9 +99,10 @@ inputAttributes();
 
 
 
-// Click event for 'Add Item' button
 
 
+
+        
 
 
 // Click event for 'Compute' button
