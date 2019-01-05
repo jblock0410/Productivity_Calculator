@@ -36,16 +36,39 @@
         sectionList.push(sectionDiv);
     }
 
-    function addItemButtonText(addItem) {
-        for (let i = 0; sectionList.length; i++) {
-            let sectionList = document.getElementsByClassName('addItem')[i];
-            sectionList[i].textContent = "Add Item";
-            return sectionList;
+// Function to assign the 'textContent' of each '.addItem button'     
+    function addItemButtonText() {
+        for (let i = 0; i < sectionList.length; i++) {
+            sectionList[i].firstElementChild.children[2].textContent = 'Add Item'; 
+            }
+        }
+    addItemButtonText();
+
+// Function to assign the 'textContent' of each '.compute button'
+    function computeButtonText() {
+        for (let i = 0; i < sectionList.length; i++) {
+            sectionList[i].firstElementChild.children[3].textContent = 'Compute'; 
+            }
+        }
+ computeButtonText();
+
+// Function to assign the attributes of the 'input' elements
+function inputAttributes() {
+    for (let i = 0; i < sectionList.length; i++) {
+        sectionList[i].firstElementChild.children[1].setAttribute('type', 'text'); 
+        sectionList[i].firstElementChild.children[1].setAttribute('name', 'minutes');
+        sectionList[i].firstElementChild.children[1].setAttribute('placeholder', 'Input Minutes...');
         }
     }
-    addItemButtonText('Add Item');
+inputAttributes();
 
-    
+
+
+
+
+
+
+
 
 // Function to assign 'id' to each 'sectionDiv' element    
     function addSectionDivId(idInput, index) { 
@@ -59,10 +82,25 @@
     function addH3Input(h2Input, index) {
         for (let i = 0; i < sectionList.length; i++) {
             i = parseInt(index);
-            sectionList[index].firstElementChild.firstElementChild.textContent = h2Input;
+            sectionList[index].firstElementChild.children[0].textContent = h2Input;
             return h2Input;
         }
     }
+
+
+
+
+
+
+
+
+// Click event for 'Add Item' button
+
+
+
+
+// Click event for 'Compute' button
+
 
 
 // Switch list for above functions    
@@ -99,3 +137,4 @@
         }
     }
     
+
